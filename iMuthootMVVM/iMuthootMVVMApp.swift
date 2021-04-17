@@ -9,9 +9,26 @@ import SwiftUI
 
 @main
 struct iMuthootMVVMApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView().colorScheme(.dark)
         }
+    }
+}
+
+// App Delegate class for conventional lifecycle capturing
+class AppDelegate: NSObject, UIApplicationDelegate {
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        NetworkManager.shared.startMonitoring()
+        return true
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        NetworkManager.shared.stopMonitoring()
     }
 }

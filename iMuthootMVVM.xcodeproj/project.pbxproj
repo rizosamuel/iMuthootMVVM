@@ -7,19 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73605A0626287D920013AD72 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73605A0526287D920013AD72 /* APIRequest.swift */; };
 		73CA3A1D26281D45005C81DE /* iMuthootMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A1C26281D45005C81DE /* iMuthootMVVMApp.swift */; };
-		73CA3A1F26281D45005C81DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A1E26281D45005C81DE /* ContentView.swift */; };
+		73CA3A1F26281D45005C81DE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A1E26281D45005C81DE /* HomeView.swift */; };
 		73CA3A2126281D45005C81DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CA3A2026281D45005C81DE /* Assets.xcassets */; };
 		73CA3A2426281D45005C81DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73CA3A2326281D45005C81DE /* Preview Assets.xcassets */; };
+		73CA3A3526281DF2005C81DE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A3426281DF2005C81DE /* LoginView.swift */; };
+		73CA3A3826281E01005C81DE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A3726281E01005C81DE /* HomeViewModel.swift */; };
+		73CA3A3B26281E0A005C81DE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A3A26281E0A005C81DE /* LoginViewModel.swift */; };
+		73CA3A4326281E95005C81DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A4026281E95005C81DE /* NetworkManager.swift */; };
+		73CA3A4426281E95005C81DE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A4126281E95005C81DE /* Utils.swift */; };
+		73CA3A4526281E95005C81DE /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A4226281E95005C81DE /* Globals.swift */; };
+		73CA3A4B26281ECA005C81DE /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A4826281ECA005C81DE /* APIResponse.swift */; };
+		73CA3A5226282375005C81DE /* LoginResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A5126282375005C81DE /* LoginResource.swift */; };
+		73CA3A5826282849005C81DE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A5726282849005C81DE /* Login.swift */; };
+		73CA3A5F262830B3005C81DE /* APIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A5E262830B3005C81DE /* APIResource.swift */; };
+		73CA3A64262834F6005C81DE /* LoginOtpVerifyResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A63262834F6005C81DE /* LoginOtpVerifyResource.swift */; };
+		73CA3A68262835C2005C81DE /* LoginOtpVerify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A67262835C2005C81DE /* LoginOtpVerify.swift */; };
+		73CA3A6B2628393C005C81DE /* OffersResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A6A2628393C005C81DE /* OffersResource.swift */; };
+		73CA3A6E26283CC9005C81DE /* OfferAndUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA3A6D26283CC9005C81DE /* OfferAndUpdate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73605A0526287D920013AD72 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		73CA3A1926281D45005C81DE /* iMuthootMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMuthootMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CA3A1C26281D45005C81DE /* iMuthootMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMuthootMVVMApp.swift; sourceTree = "<group>"; };
-		73CA3A1E26281D45005C81DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73CA3A1E26281D45005C81DE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		73CA3A2026281D45005C81DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73CA3A2326281D45005C81DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73CA3A2526281D45005C81DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73CA3A3426281DF2005C81DE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		73CA3A3726281E01005C81DE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		73CA3A3A26281E0A005C81DE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		73CA3A4026281E95005C81DE /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		73CA3A4126281E95005C81DE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		73CA3A4226281E95005C81DE /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		73CA3A4826281ECA005C81DE /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		73CA3A5126282375005C81DE /* LoginResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResource.swift; sourceTree = "<group>"; };
+		73CA3A5726282849005C81DE /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		73CA3A5E262830B3005C81DE /* APIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResource.swift; sourceTree = "<group>"; };
+		73CA3A63262834F6005C81DE /* LoginOtpVerifyResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOtpVerifyResource.swift; sourceTree = "<group>"; };
+		73CA3A67262835C2005C81DE /* LoginOtpVerify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOtpVerify.swift; sourceTree = "<group>"; };
+		73CA3A6A2628393C005C81DE /* OffersResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersResource.swift; sourceTree = "<group>"; };
+		73CA3A6D26283CC9005C81DE /* OfferAndUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferAndUpdate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				73CA3A1C26281D45005C81DE /* iMuthootMVVMApp.swift */,
-				73CA3A1E26281D45005C81DE /* ContentView.swift */,
-				73CA3A2026281D45005C81DE /* Assets.xcassets */,
-				73CA3A2526281D45005C81DE /* Info.plist */,
-				73CA3A2226281D45005C81DE /* Preview Content */,
+				73CA3A2C26281D50005C81DE /* API */,
+				73CA3A2F26281D61005C81DE /* Resources */,
+				73CA3A5626282838005C81DE /* Models */,
+				73CA3A2E26281D5B005C81DE /* ViewModels */,
+				73CA3A2D26281D56005C81DE /* Views */,
+				73CA3A3026281D6D005C81DE /* SupportFiles */,
 			);
 			path = iMuthootMVVM;
 			sourceTree = "<group>";
@@ -67,6 +99,67 @@
 				73CA3A2326281D45005C81DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73CA3A2C26281D50005C81DE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				73CA3A4826281ECA005C81DE /* APIResponse.swift */,
+				73CA3A5E262830B3005C81DE /* APIResource.swift */,
+				73605A0526287D920013AD72 /* APIRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		73CA3A2D26281D56005C81DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73CA3A1E26281D45005C81DE /* HomeView.swift */,
+				73CA3A3426281DF2005C81DE /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73CA3A2E26281D5B005C81DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				73CA3A3726281E01005C81DE /* HomeViewModel.swift */,
+				73CA3A3A26281E0A005C81DE /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		73CA3A2F26281D61005C81DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73CA3A5126282375005C81DE /* LoginResource.swift */,
+				73CA3A63262834F6005C81DE /* LoginOtpVerifyResource.swift */,
+				73CA3A6A2628393C005C81DE /* OffersResource.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		73CA3A3026281D6D005C81DE /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				73CA3A4226281E95005C81DE /* Globals.swift */,
+				73CA3A4026281E95005C81DE /* NetworkManager.swift */,
+				73CA3A4126281E95005C81DE /* Utils.swift */,
+				73CA3A2026281D45005C81DE /* Assets.xcassets */,
+				73CA3A2526281D45005C81DE /* Info.plist */,
+				73CA3A2226281D45005C81DE /* Preview Content */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		73CA3A5626282838005C81DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73CA3A5726282849005C81DE /* Login.swift */,
+				73CA3A67262835C2005C81DE /* LoginOtpVerify.swift */,
+				73CA3A6D26283CC9005C81DE /* OfferAndUpdate.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +231,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73CA3A1F26281D45005C81DE /* ContentView.swift in Sources */,
+				73CA3A64262834F6005C81DE /* LoginOtpVerifyResource.swift in Sources */,
+				73CA3A3526281DF2005C81DE /* LoginView.swift in Sources */,
+				73CA3A6E26283CC9005C81DE /* OfferAndUpdate.swift in Sources */,
+				73CA3A68262835C2005C81DE /* LoginOtpVerify.swift in Sources */,
+				73CA3A5826282849005C81DE /* Login.swift in Sources */,
+				73CA3A1F26281D45005C81DE /* HomeView.swift in Sources */,
+				73CA3A4326281E95005C81DE /* NetworkManager.swift in Sources */,
 				73CA3A1D26281D45005C81DE /* iMuthootMVVMApp.swift in Sources */,
+				73CA3A4B26281ECA005C81DE /* APIResponse.swift in Sources */,
+				73CA3A3B26281E0A005C81DE /* LoginViewModel.swift in Sources */,
+				73CA3A5226282375005C81DE /* LoginResource.swift in Sources */,
+				73CA3A3826281E01005C81DE /* HomeViewModel.swift in Sources */,
+				73CA3A6B2628393C005C81DE /* OffersResource.swift in Sources */,
+				73CA3A4426281E95005C81DE /* Utils.swift in Sources */,
+				73605A0626287D920013AD72 /* APIRequest.swift in Sources */,
+				73CA3A5F262830B3005C81DE /* APIResource.swift in Sources */,
+				73CA3A4526281E95005C81DE /* Globals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +376,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"iMuthootMVVM/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"iMuthootMVVM/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = US98U54VWC;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iMuthootMVVM/Info.plist;
+				INFOPLIST_FILE = iMuthootMVVM/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -280,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rizo.iMuthootMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,10 +398,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"iMuthootMVVM/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"iMuthootMVVM/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = US98U54VWC;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iMuthootMVVM/Info.plist;
+				INFOPLIST_FILE = iMuthootMVVM/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,7 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rizo.iMuthootMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
