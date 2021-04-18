@@ -14,7 +14,8 @@ struct iMuthootMVVMApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView().colorScheme(.dark)
+            HomeView()
+                // .colorScheme(.light)
         }
     }
 }

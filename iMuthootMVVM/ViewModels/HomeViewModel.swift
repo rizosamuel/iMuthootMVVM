@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HomeViewModel: ObservableObject {
+final class HomeViewModel: ObservableObject {
     
     @Published private(set) var isLoading = false
     

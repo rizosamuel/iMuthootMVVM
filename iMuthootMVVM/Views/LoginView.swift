@@ -15,7 +15,6 @@ struct LoginView: View {
     @State private var isRoute = false
     
     var body: some View {
-        NavigationView {
             VStack {
                 Spacer()
                 Text("Username")
@@ -74,12 +73,12 @@ struct LoginView: View {
                 .disabled(!viewModel.isValid)
             }
             .navigationTitle("Login")
-        }
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView().colorScheme(.dark)
+        LoginView()
+            // .colorScheme(.dark)
     }
 }

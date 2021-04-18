@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class LoginViewModel: ObservableObject {
+final class LoginViewModel: ObservableObject {
     
     @Published private(set) var isLoading = false
     
