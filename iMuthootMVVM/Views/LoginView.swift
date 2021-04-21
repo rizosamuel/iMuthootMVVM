@@ -52,7 +52,9 @@ struct LoginView: View {
             Button(action: {
                 if viewModel.isValid {
                     viewModel.loginToMuthoot() {
-                        isLogin.toggle()
+                        if viewModel.isLoginSuccess {
+                            isLogin.toggle()
+                        }
                     }
                 }
             }, label: {
