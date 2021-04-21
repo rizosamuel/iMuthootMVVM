@@ -16,8 +16,7 @@ final class LoginViewModel: ObservableObject {
     @Published var password = ""
     
     @Published var isValid = false
-    @Published var isLoginSuccess = false
-    @Published var isLoginFailure = false
+    @Published var isLoginApiSuccess = false
     
     @Published var ApiErrorMessage = ""
     @Published var errorUsername = ""
@@ -43,12 +42,12 @@ final class LoginViewModel: ObservableObject {
         resource.execute() { [weak self] (response, error) in
             
             guard error == nil else {
-                self?.isLoginFailure = true
+                self?.isLoginApiSuccess = false
                 self?.ApiErrorMessage = error!
                 return
             }
             
-            self?.isLoginSuccess = true
+            self?.isLoginApiSuccess = true
             self?.mobile = response.data!.mobileNumber
             self?.isLoading = false
             
@@ -56,7 +55,7 @@ final class LoginViewModel: ObservableObject {
         }
     }
     
-    func verifyOtp() {
+    func verifyOtp(completion: @escaping() -> Void) {
         
         let resource = LoginOtpVerifyResource()
         
@@ -70,7 +69,6 @@ final class LoginViewModel: ObservableObject {
                 return
             }
             
-            // self?.mobileNumber = response.data!.mobileNumber
             self?.isLoading = false
         }
     }
