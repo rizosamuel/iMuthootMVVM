@@ -16,14 +16,15 @@ final class LoginViewModel: ObservableObject {
     @Published var password = ""
     
     @Published var isValid = false
-    @Published var isFailure = false
+    @Published var isLoginSuccess = false
+    @Published var isLoginFailure = false
     
     @Published var ApiErrorMessage = ""
     @Published var errorUsername = ""
     @Published var errorPassword = ""
     
     @Published var mobile = ""
-
+    
     private var cancellables = Set<AnyCancellable>()
     
     init() {
@@ -32,7 +33,7 @@ final class LoginViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
-    func loginToMuthoot() {
+    func loginToMuthoot(completion: @escaping() -> Void) {
         
         let resource = LoginResource()
         
@@ -42,13 +43,16 @@ final class LoginViewModel: ObservableObject {
         resource.execute() { [weak self] (response, error) in
             
             guard error == nil else {
-                self?.isFailure = true
+                self?.isLoginFailure = true
                 self?.ApiErrorMessage = error!
                 return
             }
             
+            self?.isLoginSuccess = true
             self?.mobile = response.data!.mobileNumber
             self?.isLoading = false
+            
+            completion()
         }
     }
     
@@ -62,7 +66,6 @@ final class LoginViewModel: ObservableObject {
         resource.execute { [weak self] (response, error) in
             
             guard error == nil else {
-                self?.isFailure = true
                 self?.ApiErrorMessage = error!
                 return
             }

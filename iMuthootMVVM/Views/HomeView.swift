@@ -50,7 +50,9 @@ struct HomeView: View {
                 Button {
                     isRoute.toggle()
                 } label: {
-                    Label("Login", systemImage: "arrow.right.square")
+                    let label = isLoggedIn ? "Logged in" : "Login"
+                    let image = isLoggedIn ? "person.crop.square" : "arrow.right.square"
+                    Label(label, systemImage: image)
                 }
             }
         }
@@ -60,6 +62,6 @@ struct HomeView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-            
+        
     }
 }
